@@ -504,6 +504,9 @@ importers:
       '@scalar/openapi-parser':
         specifier: workspace:*
         version: link:../../packages/openapi-parser
+      typescript:
+        specifier: ^5.6.2
+        version: 5.6.2
     devDependencies:
       '@tsconfig/recommended':
         specifier: ^1.0.7
