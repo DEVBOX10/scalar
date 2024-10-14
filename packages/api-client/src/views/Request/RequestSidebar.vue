@@ -218,7 +218,8 @@ onBeforeUnmount(() => {
         </div>
         <SidebarButton
           v-if="!isReadonly"
-          :click="events.commandPalette.emit">
+          :click="events.commandPalette.emit"
+          :hotkey="{ modifier: 'meta', key: 'K' }">
           <template #title>Add Item</template>
         </SidebarButton>
       </div>

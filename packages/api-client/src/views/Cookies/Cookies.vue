@@ -147,8 +147,10 @@ onMounted(() => {
         </div>
       </template>
       <template #button>
-        <SidebarButton :click="addCookieHandler">
-          <template #title>Add Item</template>
+        <SidebarButton
+          :click="addCookieHandler"
+          :hotkey="{ modifier: 'meta', key: 'N' }">
+          <template #title>Add Cookie</template>
         </SidebarButton>
       </template>
     </Sidebar>
